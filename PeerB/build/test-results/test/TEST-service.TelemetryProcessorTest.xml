@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="service.TelemetryProcessorTest" tests="8" skipped="0" failures="8" errors="0" timestamp="2026-10-01T00:45:27.351Z" hostname="xps-snap-jcm" time="0.018">
+  <properties/>
+  <testcase name="CP-08: Consulta de estado con comando STATUS" classname="service.TelemetryProcessorTest" time="0.003">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;ERROR;DEVICE_NOT_FOUND&gt; but was: &lt;ERROR;NOT_IMPLEMENTED&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;ERROR;DEVICE_NOT_FOUND&gt; but was: &lt;ERROR;NOT_IMPLEMENTED&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at app//service.TelemetryProcessorTest.testStatusQuery(TelemetryProcessorTest.java:85)
+	at java.base@21.0.12.1/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base@21.0.12.1/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base@21.0.12.1/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="CP-07: Error por tipo de sensor no soportado" classname="service.TelemetryProcessorTest" time="0.002">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;ERROR;UNKNOWN_SENSOR_TYPE&gt; but was: &lt;ERROR;NOT_IMPLEMENTED&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;ERROR;UNKNOWN_SENSOR_TYPE&gt; but was: &lt;ERROR;NOT_IMPLEMENTED&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at app//service.TelemetryProcessorTest.testUnknownSensorType(TelemetryProcessorTest.java:78)
+	at java.base@21.0.12.1/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base@21.0.12.1/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base@21.0.12.1/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="CP-02: Alerta de temperatura alta (&gt; 40.0)" classname="service.TelemetryProcessorTest" time="0.004">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;ALERT;HIGH_TEMPERATURE;42.5&gt; but was: &lt;ERROR;NOT_IMPLEMENTED&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;ALERT;HIGH_TEMPERATURE;42.5&gt; but was: &lt;ERROR;NOT_IMPLEMENTED&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at app//service.TelemetryProcessorTest.testHighTemperatureAlert(TelemetryProcessorTest.java:29)
+	at java.base@21.0.12.1/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base@21.0.12.1/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base@21.0.12.1/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="CP-03: Alerta de congelamiento / temperatura bajo cero (&lt; 0.0)" classname="service.TelemetryProcessorTest" time="0.002">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;ALERT;FREEZING_TEMPERATURE;-5.0&gt; but was: &lt;ERROR;NOT_IMPLEMENTED&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;ALERT;FREEZING_TEMPERATURE;-5.0&gt; but was: &lt;ERROR;NOT_IMPLEMENTED&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at app//service.TelemetryProcessorTest.testFreezingTemperatureAlert(TelemetryProcessorTest.java:36)
+	at java.base@21.0.12.1/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base@21.0.12.1/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base@21.0.12.1/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="CP-05: Registro y alertas de batería" classname="service.TelemetryProcessorTest" time="0.002">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;OK;BATTERY_OK;80.0&gt; but was: &lt;ERROR;NOT_IMPLEMENTED&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;OK;BATTERY_OK;80.0&gt; but was: &lt;ERROR;NOT_IMPLEMENTED&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at app//service.TelemetryProcessorTest.testBatteryHandling(TelemetryProcessorTest.java:56)
+	at java.base@21.0.12.1/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base@21.0.12.1/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base@21.0.12.1/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="CP-01: Registro de temperatura en rango normal" classname="service.TelemetryProcessorTest" time="0.001">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;OK;TEMP_RECORDED;25.0&gt; but was: &lt;ERROR;NOT_IMPLEMENTED&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;OK;TEMP_RECORDED;25.0&gt; but was: &lt;ERROR;NOT_IMPLEMENTED&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at app//service.TelemetryProcessorTest.testNormalTemperature(TelemetryProcessorTest.java:22)
+	at java.base@21.0.12.1/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base@21.0.12.1/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base@21.0.12.1/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="CP-04: Registro y alertas de humedad" classname="service.TelemetryProcessorTest" time="0.001">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;OK;HUMIDITY_RECORDED;60.0&gt; but was: &lt;ERROR;NOT_IMPLEMENTED&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;OK;HUMIDITY_RECORDED;60.0&gt; but was: &lt;ERROR;NOT_IMPLEMENTED&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at app//service.TelemetryProcessorTest.testHumidityHandling(TelemetryProcessorTest.java:43)
+	at java.base@21.0.12.1/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base@21.0.12.1/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base@21.0.12.1/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="CP-06: Manejo de formatos inválidos y errores de parseo" classname="service.TelemetryProcessorTest" time="0.001">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;ERROR;INVALID_FORMAT&gt; but was: &lt;ERROR;NOT_IMPLEMENTED&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;ERROR;INVALID_FORMAT&gt; but was: &lt;ERROR;NOT_IMPLEMENTED&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at app//service.TelemetryProcessorTest.testInvalidFormats(TelemetryProcessorTest.java:65)
+	at java.base@21.0.12.1/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base@21.0.12.1/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base@21.0.12.1/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

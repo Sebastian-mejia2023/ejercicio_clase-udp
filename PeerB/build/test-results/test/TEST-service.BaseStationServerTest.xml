@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="service.BaseStationServerTest" tests="2" skipped="0" failures="2" errors="0" timestamp="2026-10-01T00:45:21.292Z" hostname="xps-snap-jcm" time="6.057">
+  <properties/>
+  <testcase name="IT-02: El servidor procesa múltiples solicitudes de diferentes dispositivos" classname="service.BaseStationServerTest" time="3.046">
+    <failure message="java.net.SocketTimeoutException: Receive timed out" type="java.net.SocketTimeoutException">java.net.SocketTimeoutException: Receive timed out
+	at java.base/sun.nio.ch.DatagramChannelImpl.tryBlockingReceive(DatagramChannelImpl.java:760)
+	at java.base/sun.nio.ch.DatagramChannelImpl.blockingReceive(DatagramChannelImpl.java:692)
+	at java.base/sun.nio.ch.DatagramSocketAdaptor.receive(DatagramSocketAdaptor.java:204)
+	at java.base/java.net.DatagramSocket.receive(DatagramSocket.java:714)
+	at service.BaseStationServerTest.testServerMultipleRequests(BaseStationServerTest.java:88)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="IT-01: El servidor recibe datagrama UDP y responde correctamente al remitente" classname="service.BaseStationServerTest" time="3.01">
+    <failure message="java.net.SocketTimeoutException: Receive timed out" type="java.net.SocketTimeoutException">java.net.SocketTimeoutException: Receive timed out
+	at java.base/sun.nio.ch.DatagramChannelImpl.tryBlockingReceive(DatagramChannelImpl.java:760)
+	at java.base/sun.nio.ch.DatagramChannelImpl.blockingReceive(DatagramChannelImpl.java:692)
+	at java.base/sun.nio.ch.DatagramSocketAdaptor.receive(DatagramSocketAdaptor.java:204)
+	at java.base/java.net.DatagramSocket.receive(DatagramSocket.java:714)
+	at service.BaseStationServerTest.testServerReceivesAndRepliesViaUdp(BaseStationServerTest.java:60)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

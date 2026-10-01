@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="client.SensorClientTest" tests="3" skipped="0" failures="3" errors="0" timestamp="2026-10-01T00:45:21.284Z" hostname="xps-snap-jcm" time="0.076">
+  <properties/>
+  <testcase name="CL-02: El cliente consulta estado con comando STATUS" classname="client.SensorClientTest" time="0.047">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;STATUS_OK;sensor-x;TEMP;22.5&gt; but was: &lt;null&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;STATUS_OK;sensor-x;TEMP;22.5&gt; but was: &lt;null&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at app//client.SensorClientTest.testQueryStatusSuccess(SensorClientTest.java:98)
+	at java.base@21.0.12.1/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base@21.0.12.1/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base@21.0.12.1/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="CL-03: El cliente lanza SocketTimeoutException cuando el servidor no responde" classname="client.SensorClientTest" time="0.019">
+    <failure message="org.opentest4j.AssertionFailedError: Debe lanzar SocketTimeoutException al transcurrir el timeout. ==&gt; Expected java.net.SocketTimeoutException to be thrown, but nothing was thrown." type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Debe lanzar SocketTimeoutException al transcurrir el timeout. ==&gt; Expected java.net.SocketTimeoutException to be thrown, but nothing was thrown.
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at app//org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
+	at app//org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:39)
+	at app//org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3131)
+	at app//client.SensorClientTest.testTimeoutWhenServerDoesNotReply(SensorClientTest.java:121)
+	at java.base@21.0.12.1/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base@21.0.12.1/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base@21.0.12.1/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="CL-01: El cliente envía telemetría formateada y recibe respuesta" classname="client.SensorClientTest" time="0.004">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;OK;TEMP_RECORDED;22.5&gt; but was: &lt;null&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;OK;TEMP_RECORDED;22.5&gt; but was: &lt;null&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at app//client.SensorClientTest.testSendTelemetrySuccess(SensorClientTest.java:70)
+	at java.base@21.0.12.1/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base@21.0.12.1/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base@21.0.12.1/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
