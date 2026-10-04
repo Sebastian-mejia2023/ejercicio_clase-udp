@@ -10,3 +10,7 @@ jar {
     }
     archiveBaseName = 'peer-a'
 }
+
+run {
+    standardInput = System.in
+}
